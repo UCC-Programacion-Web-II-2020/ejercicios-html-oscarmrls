@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>E03</title>
+</head>
+<body>
+<form method="get" action="http://servicios.ver.ucc.mx/procesar.php">
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label>Nombre</label><br/>
+        <input type="text" name="nombre" placeholder="Nombre" required><br/>
+        <label>E-mail:</label><br/>
+        <input type="email" name="email" placeholder="E-mail" required><br/>
+        <label>Contraseña</label><br/>
+        <input type="password" name="password" placeholder="Contraseña" required><br/>
+        <label><input type="radio" name="sexo" value="hombre" checked="checked">Hombre</label>
+        <label><input type="radio" name="sexo" value="mujer">Mujer</label>
+    </fieldset>
+    <fieldset>
+        <legend>Servicio de noticias</legend>
+        <label><input type="checkbox" name="noticias[]" value="Noticias de política">Noticias de politica</label><br/>
+        <label><input type="checkbox" name="noticias[]" value="Noticias de espectáculos">Noticias de espectáculos</label><br/>
+        <label><input type="checkbox" name="noticias[]" value="Noticias de tecnología">Noticias de tecnologia</label><br/>
+        <label>Método de Entrega</label><br/>
+        <select>
+            <option value="Desde el portal">Desde el portal</option>
+            <option value="Enviar a mi e-mail">Enviar a mi e-mail</option>
+        </select><br/>
+        <label>Observación</label><br/>
+        <textarea name="observacion" cols="30" rows="5"></textarea>
+    </fieldset>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
